@@ -5,6 +5,6 @@ node_js:
 
 deploy:
   - provider: script
-    script: rm docs -rf && yarn build && mv build/* docs/*
+    script: rm docs -rf && yarn build && && mkdir docs -p && mv build/* docs/*
     skip_cleanup: true
 
