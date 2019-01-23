@@ -1,6 +1,7 @@
 {
   "name": "yanish",
   "version": "0.1.0",
+  "homepage": "https://yanishoss.github.io/beingyoung/",
   "private": true,
   "dependencies": {
     "@emotion/core": "10.0.6",
