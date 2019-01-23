@@ -3,8 +3,13 @@ language: node_js
 node_js:
   - node
 
+script: make deploy
+
 deploy:
-  - provider: script
-    script: make deploy
+  - provider: pages
     skip_cleanup: true
+    github_token: $GITHUB_TOKEN
+    keep_history: true
+    on:
+      branch: master
 
