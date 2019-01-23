@@ -5,6 +5,6 @@ clean:
 build: clean
 	yarn build
 	mkdir docs -p
-	mv build/* docs/*
+	mv build/* docs
 
 deploy: build
