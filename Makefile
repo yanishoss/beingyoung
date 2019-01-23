@@ -1,10 +1,10 @@
 clean:
-	rm docs -rf
+	rm dist -rf
 	rm build -rf
 
 build: clean
 	yarn build
-	mkdir docs -p
-	mv build/* docs
+	mkdir dist -p
+	mv build/* dist
 
 deploy: build
