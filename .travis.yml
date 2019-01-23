@@ -1,0 +1,9 @@
+language: node_js
+
+node_js: latest
+
+deploy:
+  - provider: script
+    script: rm docs && yarn build && mv build/* docs/*
+    skip_cleanup: true
+
