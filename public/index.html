@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="stylesheet" href="../node_modules/normalize.css/normalize.css">
+    <link rel="stylesheet" href="./assets/fonts/Aleo-Regular.ttf">
+    <link rel="stylesheet" href="./assets/fonts/Aleo-Bold.ttf">
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <title>Take over the world</title>
+    <style>
+      #bad-display {
+        display: none;
+      }
+
+      @media only screen and (max-width: 1279px) {
+        #root {
+          display: none !important;
+        }
+
+        #bad-display {
+          display: flex;
+          width: 100vw;
+          height: 100vh;
+          justify-content: center;
+          align-items: center;
+          color: #000;
+          font-size: 4rem;
+          text-align: center;
+          padding: 0 1rem 0 1rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <div id="bad-display">
+      This site is made for desktop-sized screen...
+    </div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>
